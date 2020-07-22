@@ -18,6 +18,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'lazy-load' %}">Infinite Scroll</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'client-side' %}">Client Side</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'server-side' %}">Server Side</a>
+            </li>
             {% if user.is_authenticated %}
             <li class="nav-item">
               <a class="nav-link" href="{% url 'account_email' %}">Change E-mail</a>
