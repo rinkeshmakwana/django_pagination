@@ -1,11 +1,8 @@
 from django.shortcuts import render
 from django.views.generic import ListView
 from .models import Profile
-from django.template import loader
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from django.http import JsonResponse
 
-# Create your views here.
+
 class ClientSideView(ListView):
     model = Profile
     context_object_name = 'profiles'
